@@ -138,7 +138,7 @@ const simplePrint = function() {
 }
 */
 const simplePrint = () => console.log('simplePrint!');
-const add = (a, b) => a + b;
+//const add = (a, b) => a + b;
 
 // 블럭을 쓰면 리턴 키워드 써야함
 const simpleMultiply = (a, b) => {
@@ -151,3 +151,32 @@ const simpleMultiply = (a, b) => {
 (function hello() {
     console.log('IIFE');
 })()
+
+// Fun quiz time
+// function calculate(command, a, b)
+// command: add, substract, divide, multiply, remainder
+
+function calcalate(command, a, b) {
+    if (command == add) {
+        add(a,b);
+    } else if (command == substract) {
+        substract(a, b);
+    } else if (command == divide) {
+        divide(a, b);
+    } else if (command == multiply) {
+        multiply(a, b);
+    } else if (command == remainder) {
+        remainder(a, b);
+    } else {
+        console.log('command error!');
+    } 
+}
+
+const add = (a, b) => console.log(`${a + b}`);
+const substract = (a, b) => console.log(`${a - b}`);
+const divide = (a, b) => console.log(`${a / b}`);
+const multiply = (a, b) => console.log(`${a * b}`);
+const remainder = (a, b) => console.log(`${a % b}`);
+
+calcalate(divide, 10, 5);
+calcalate();
