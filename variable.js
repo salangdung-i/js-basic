@@ -114,7 +114,7 @@ text = '7' + 5;
 console.log(`value: ${text}, type: ${typeof text}`);
 text = '8' / 2;
 console.log(`value: ${text}, type: ${typeof text}`);
-console.log(text.charAt(0)); // error
+//console.log(text.charAt(0)); // error
 
 
 
