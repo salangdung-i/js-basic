@@ -180,3 +180,22 @@ const remainder = (a, b) => console.log(`${a % b}`);
 
 calcalate(divide, 10, 5);
 calcalate();
+
+function calcalate_switch(command, a, b) {
+    switch (command) {
+        case 'add':
+            return a + b;
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainder':
+            return a % b;
+        default:
+            throw Error('unknown command');    
+    }
+}
+
+console.log(calcalate_switch('add', 2, 3));
