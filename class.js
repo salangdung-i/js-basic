@@ -28,6 +28,7 @@ console.log(ellie.age);
 ellie.speak();
 
 // 2. Getter and setters
+//https://www.w3schools.com/js/js_object_accessors.asp 참고
 class User {
     constructor(firstName, lastName, age) {
         this.firstName = firstName;
